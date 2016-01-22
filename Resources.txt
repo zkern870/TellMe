@@ -1,0 +1,3 @@
+Here are some resources for you to use.
+
+Android Studio: http://developer.android.com/sdk/index.html
