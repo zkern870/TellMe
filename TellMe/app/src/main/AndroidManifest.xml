@@ -48,6 +48,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.kutztown.tellme.MainActivity" />
         </activity>
+        <activity
+            android:name=".sendGuestNewsFeed"
+            android:label="@string/title_activity_send_guest_news_feed"
+            android:parentActivityName=".DisplayGuestMain"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kutztown.tellme.DisplayGuestMain" />
+        </activity>
+        <activity
+            android:name=".sendGuestFeedMe"
+            android:label="@string/title_activity_send_guest_feed_me"
+            android:parentActivityName=".DisplayGuestMain"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kutztown.tellme.DisplayGuestMain" />
+        </activity>
     </application>
 
 </manifest>

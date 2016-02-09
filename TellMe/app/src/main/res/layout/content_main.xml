@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.kutztown.tellme.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="#ad7272"
+    android:background="@color/colorMaroon"
     >
 !This is the first button for log in
     <Button

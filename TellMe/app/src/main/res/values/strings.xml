@@ -5,7 +5,9 @@
     <string name="guest_button">Guest Login</string>
     <string name="createAccountbutton">Create Account</string>
     <string name="title_activity_send_login">Sign in</string>
-
+    <string name="newsFeed">Tell Me</string>
+    <string name="foodFeed">Feed Me</string>
+    <string name="home">Home</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -20,4 +22,6 @@
     </string>
     <string name="title_activity_display_guest_main">DisplayGuestMain</string>
     <string name="title_activity_display_create_account">Create Account</string>
+    <string name="title_activity_send_guest_news_feed">sendGuestNewsFeed</string>
+    <string name="title_activity_send_guest_feed_me">sendGuestFeedMe</string>
 </resources>

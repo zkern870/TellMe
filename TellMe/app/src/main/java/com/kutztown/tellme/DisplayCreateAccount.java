@@ -3,6 +3,7 @@ package com.kutztown.tellme;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -38,6 +39,21 @@ import static android.Manifest.permission.READ_CONTACTS;
  * A login screen that offers login via email/password.
  */
 public class DisplayCreateAccount extends AppCompatActivity implements LoaderCallbacks<Cursor> {
+
+    /**
+     * This will be called when you go to sumbit your created account, this will
+     * send you back to the main screen so you can log in.
+     * @param view
+     */
+    public void sendMain(View view){
+
+        /** For now this just sends it home, but once database is working
+         * it will insert the email and password to the date base and then
+         * send it home.
+         */
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
     /**
      * Id to identity READ_CONTACTS permission request.

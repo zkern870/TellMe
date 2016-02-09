@@ -8,29 +8,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class DisplayGuestMain extends AppCompatActivity {
+public class sendGuestNewsFeed extends AppCompatActivity {
 
-    /**
-     * This will be called when the Tell Me button is clicked from the display
-     * guest activity. It will send to a news feed activity.
-     * @param view
-     */
-    public void sendGuestNewsFeed (View view){
-        Intent intent = new Intent(this, sendGuestNewsFeed.class);
-        startActivity(intent);
-    }
-
-    public void sendGuestFoodFeed (View view ) {
-        Intent intent1 = new Intent(this, sendGuestFeedMe.class);
+    public void sendGuestMain (View view){
+        Intent intent1 = new Intent(this, DisplayGuestMain.class);
         startActivity(intent1);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_guest_main);
+        setContentView(R.layout.activity_send_guest_news_feed);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
